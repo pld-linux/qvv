@@ -32,11 +32,11 @@ and few other things as well.
 QVV jest przegl±dark± plików graficznych opieraj±c± siê na narzêdziach
 Qt TrollTecha! QVV jest niewielka, prosta i porêczna.
 
-QVV to tylko kilka tysiêcy linijek kodu ¼ród³owego a potrafi obs³u¿yæ
-tyle formatów ile potrafi Qt -- JPEG (wszystkie te formaty, które
+QVV to tylko kilka tysiêcy linijek kodu ¼ród³owego, a potrafi obs³u¿yæ
+tyle formatów, ile potrafi Qt: JPEG (wszystkie te formaty, które
 obs³uguje jpeglib), PNG, GIF, XPM i inne...
 
-QVV pozwoli ci przegl±daæ katalogi w interfejsie w stylu lynxa,
+QVV pozwala przegl±daæ katalogi w interfejsie w stylu lynksa,
 przegl±daæ kolejno obrazki w oknie obrazów lub li¶cie katalogów.
 Zbiorowe Okna obrazków i przegl±darki katalogów mog± byæ otwierane i
 zamykane jednym klawiszem. £atwo nad tym zapanowaæ strza³kami lub
@@ -49,7 +49,9 @@ myszk±, a parê innych dodatków równie¿ mo¿e pomóc.
 QTDIR=%{_prefix}
 export QTDIR
 qmake
-%{__make} CFLAGS="%{rpmcflags}" CXXFLAGS="%{rpmcflags}"
+%{__make} \
+	CFLAGS="%{rpmcflags}" \
+	CXXFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
