@@ -6,6 +6,6 @@ Type=Application
 Terminal=false
 MapNotify=false
 Encoding=UTF-8
-Categories=Graphics;2DGraphics;
+Categories=Qt;Graphics;2DGraphics;
 Icon=qvv.png
 # vi: encoding=utf-8
