@@ -67,5 +67,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ANFSCD HISTORY README
 %attr(755,root,root) %{_bindir}/qvv
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}*
