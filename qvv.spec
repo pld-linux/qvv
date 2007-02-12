@@ -1,5 +1,5 @@
 Summary:	Image Viewer and Browser
-Summary(pl.UTF-8):   Przeglądarka plików graficznych
+Summary(pl.UTF-8):	Przeglądarka plików graficznych
 Name:		qvv
 Version:	0.19
 Release:	0.2
