@@ -1,5 +1,5 @@
 Summary:	Image Viewer and Browser
-Summary(pl):	Przegl±darka plików graficznych
+Summary(pl.UTF-8):   PrzeglÄ…darka plikÃ³w graficznych
 Name:		qvv
 Version:	0.19
 Release:	0.2
@@ -28,19 +28,19 @@ directory list, multiple image windows and directory browsers can be
 opened/closed with a single key, panning easy with arrow keys or mouse
 and few other things as well.
 
-%description -l pl
-QVV jest przegl±dark± plików graficznych opieraj±c± siê na narzêdziach
-Qt TrollTecha! QVV jest niewielka, prosta i porêczna.
+%description -l pl.UTF-8
+QVV jest przeglÄ…darkÄ… plikÃ³w graficznych opierajÄ…cÄ… siÄ™ na narzÄ™dziach
+Qt TrollTecha! QVV jest niewielka, prosta i porÄ™czna.
 
-QVV to tylko kilka tysiêcy linijek kodu ¼ród³owego, a potrafi obs³u¿yæ
-tyle formatów, ile potrafi Qt: JPEG (wszystkie te formaty, które
-obs³uguje jpeglib), PNG, GIF, XPM i inne...
+QVV to tylko kilka tysiÄ™cy linijek kodu ÅºrÃ³dÅ‚owego, a potrafi obsÅ‚uÅ¼yÄ‡
+tyle formatÃ³w, ile potrafi Qt: JPEG (wszystkie te formaty, ktÃ³re
+obsÅ‚uguje jpeglib), PNG, GIF, XPM i inne...
 
-QVV pozwala przegl±daæ katalogi w interfejsie w stylu lynksa,
-przegl±daæ kolejno obrazki w oknie obrazów lub li¶cie katalogów.
-Zbiorowe Okna obrazków i przegl±darki katalogów mog± byæ otwierane i
-zamykane jednym klawiszem. £atwo nad tym zapanowaæ strza³kami lub
-myszk±, a parê innych dodatków równie¿ mo¿e pomóc.
+QVV pozwala przeglÄ…daÄ‡ katalogi w interfejsie w stylu lynksa,
+przeglÄ…daÄ‡ kolejno obrazki w oknie obrazÃ³w lub liÅ›cie katalogÃ³w.
+Zbiorowe Okna obrazkÃ³w i przeglÄ…darki katalogÃ³w mogÄ… byÄ‡ otwierane i
+zamykane jednym klawiszem. Åatwo nad tym zapanowaÄ‡ strzaÅ‚kami lub
+myszkÄ…, a parÄ™ innych dodatkÃ³w rÃ³wnieÅ¼ moÅ¼e pomÃ³c.
 
 %prep
 %setup -q
