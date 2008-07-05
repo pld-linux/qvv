@@ -2,7 +2,7 @@ Summary:	Image Viewer and Browser
 Summary(pl.UTF-8):	Przeglądarka plików graficznych
 Name:		qvv
 Version:	0.19
-Release:	1	
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://cade.datamax.bg/qvv/%{name}-%{version}.tar.gz
@@ -68,4 +68,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ANFSCD HISTORY README
 %attr(755,root,root) %{_bindir}/qvv
 %{_desktopdir}/*.desktop
-%{_pixmapsdir}*
+%{_pixmapsdir}/*.png
