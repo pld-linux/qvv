@@ -1,17 +1,17 @@
 Summary:	Image Viewer and Browser
 Summary(pl.UTF-8):	Przeglądarka plików graficznych
 Name:		qvv
-Version:	0.19
-Release:	2
+Version:	4.01
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://cade.datamax.bg/qvv/%{name}-%{version}.tar.gz
-# Source0-md5:	89d2ebbef88ec10889d4343e224e1794
+# Source0-md5:	96a4538c0ead3ddbffeb98868a9ff2b8
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://cade.datamax.bg/qvv/
-BuildRequires:	qt-devel >= 3
-BuildRequires:	qmake
+BuildRequires:	QtCore-devel
+BuildRequires:	qt4-qmake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -48,7 +48,7 @@ myszką, a parę innych dodatków również może pomóc.
 %build
 QTDIR=%{_prefix}
 export QTDIR
-qmake
+qmake-qt4
 %{__make} \
 	CFLAGS="%{rpmcflags}" \
 	CXXFLAGS="%{rpmcflags}"
