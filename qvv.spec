@@ -11,6 +11,8 @@ Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://cade.datamax.bg/qvv/
 BuildRequires:	QtCore-devel
+BuildRequires:	QtGui-devel
+BuildRequires:	qt4-build
 BuildRequires:	qt4-qmake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
