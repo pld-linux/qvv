@@ -52,9 +52,7 @@ QTDIR=%{_prefix}
 export QTDIR
 cd src
 qmake-qt5 qvv.qt5.pro
-%{__make} \
-	CFLAGS="%{rpmcflags}" \
-	CXXFLAGS="%{rpmcflags}"
+%{__make}
 
 %install
 cd src
