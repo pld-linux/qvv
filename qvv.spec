@@ -1,19 +1,19 @@
 Summary:	Image Viewer and Browser
 Summary(pl.UTF-8):	Przeglądarka plików graficznych
 Name:		qvv
-Version:	4.02
-Release:	2
+Version:	4.05
+Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://cade.datamax.bg/qvv/%{name}-%{version}.tar.gz
-# Source0-md5:	6ab47a5344e3afa1a4d79928b3522e22
+Source0:	https://cade.noxrun.com/projects/qvv/%{name}-%{version}.tar.gz
+# Source0-md5:	159be2b898a1d24ef9eb91cbac497623
 Source1:	%{name}.desktop
 Source2:	%{name}.png
-URL:		http://cade.datamax.bg/qvv/
-BuildRequires:	QtCore-devel
-BuildRequires:	QtGui-devel
-BuildRequires:	qt4-build
-BuildRequires:	qt4-qmake
+URL:		https://cade.noxrun.com/projects/qvv/
+BuildRequires:	Qt5Core-devel
+BuildRequires:	Qt5Gui-devel
+BuildRequires:	qt5-build
+BuildRequires:	qt5-qmake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -50,12 +50,14 @@ myszką, a parę innych dodatków również może pomóc.
 %build
 QTDIR=%{_prefix}
 export QTDIR
-qmake-qt4
+cd src
+qmake-qt5 qvv.qt5.pro
 %{__make} \
 	CFLAGS="%{rpmcflags}" \
 	CXXFLAGS="%{rpmcflags}"
 
 %install
+cd src
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir},%{_pixmapsdir}}
 install qvv $RPM_BUILD_ROOT%{_bindir}
