@@ -14,6 +14,7 @@ BuildRequires:	Qt5Core-devel
 BuildRequires:	Qt5Widgets-devel
 BuildRequires:	qt5-build
 BuildRequires:	qt5-qmake
+BuildRequires:	rpmbuild(macros) >= 2.016
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -51,7 +52,7 @@ myszką, a parę innych dodatków również może pomóc.
 QTDIR=%{_prefix}
 export QTDIR
 cd src
-qmake-qt5 qvv.qt5.pro
+%{qmake_qt5} qvv.qt5.pro
 %{__make}
 
 %install
