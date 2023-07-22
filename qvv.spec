@@ -11,7 +11,7 @@ Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		https://cade.noxrun.com/projects/qvv/
 BuildRequires:	Qt5Core-devel
-BuildRequires:	Qt5Gui-devel
+BuildRequires:	Qt5Widgets-devel
 BuildRequires:	qt5-build
 BuildRequires:	qt5-qmake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
