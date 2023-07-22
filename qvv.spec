@@ -49,8 +49,6 @@ myszką, a parę innych dodatków również może pomóc.
 %setup -q
 
 %build
-QTDIR=%{_prefix}
-export QTDIR
 cd src
 %{qmake_qt5} qvv.qt5.pro
 %{__make}
